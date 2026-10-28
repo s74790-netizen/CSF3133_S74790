@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Project & Student Feedback</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mini Project & Feedback Form</h1>
+
+    <!-- Week 4 and Week 5 Table Rows -->
+    <table>
+        <tr>
+            <th>Week</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td>Week 4</td>
+            <td rowspan="2">Mini Project</td>
+        </tr>
+        <tr>
+            <td>Week 5</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><strong>Average Rating</strong></td>
+        </tr>
+    </table>
+
+    <!-- E-mail input with matching label -->
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- A third radio option "Average" -->
+    <div>
+        <label>Rating:</label>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label>
+        
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label>
+        
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+    </div>
+
+    <!-- Group of at least 3 checkboxes -->
+    <div>
+        <label>Topics I want more practice on:</label><br>
+        <input type="checkbox" id="topic1" name="practice_topics" value="html">
+        <label for="topic1">HTML Forms &amp; Tables</label><br>
+        
+        <input type="checkbox" id="topic2" name="practice_topics" value="css">
+        <label for="topic2">CSS Styling</label><br>
+        
+        <input type="checkbox" id="topic3" name="practice_topics" value="javascript">
+        <label for="topic3">JavaScript Basics</label>
+    </div>
+
+    <!-- Select dropdown for Section/Group (at least 3 options) -->
+    <div>
+        <label for="section">Section/Group:</label>
+        <select id="section" name="section">
+            <option value="" disabled selected>Select your section</option>
+            <option value="section_a">Section A</option>
+            <option value="section_b">Section B</option>
+            <option value="section_c">Section C</option>
+        </select>
+    </div>
+
+    <!-- Navigation Bar Link -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#comments">Student Comments</a></li>
+        </ul>
+    </nav>
+
+    <!-- Semantic Comments Section -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+        
+        <article>
+            <h3>Aisha Rahman</h3>
+            <p>The mini project really helped me understand how to structure tables and forms properly!</p>
+        </article>
+
+        <article>
+            <h3>Marcus Chen</h3>
+            <p>Great exercises! The practical examples made learning HTML semantics much easier.</p>
+        </article>
+    </section>
+
+</body>
+</html>
