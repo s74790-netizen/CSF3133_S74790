@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1><span>Maria Bakery</h1></head></span>
+    
+        <nav>
+            <a href="#home">Home</a> | 
+            <a href="#menu">Menu</a> | 
+            <a href="#order">Order Now</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Block element: div containing introduction paragraph with inline elements -->
+        <div>
+            <h2>Welcome to Our Bakery</h2>
+            <p>
+                Welcome to <strong>CampusBake&reg;</strong>! We are <em>thrilled</em> to serve you 
+                <span>freshly baked goods</span> everyday. Check out our <a href="#menu">Price List</a> below!
+            </p>
+        </div>
+
+        <!-- Order Form Section -->
+        <div id="order">
+            <h2>Place Your Order</h2>
+            <form action="#" method="POST">
+                <!-- Customer Name -->
+                <label for="cust-name">Customer Name:</label><br>
+                <input type="text" id="cust-name" name="cust_name" placeholder="Enter your full name" required autofocus><br><br>
+
+                <!-- Phone number and e-mail -->
+                <label for="cust-phone">Phone Number:</label><br>
+                <input type="tel" id="cust-phone" name="cust_phone" required><br><br>
+
+                <label for="cust-email">E-mail:</label><br>
+                <input type="email" id="cust-email" name="cust_email" required><br><br>
+
+                <!-- Pick-up date and time -->
+                <label for="pickup-date">Pick-up Date:</label><br>
+                <input type="date" id="pickup-date" name="pickup_date"><br><br>
+
+                <label for="pickup-time">Pick-up Time:</label><br>
+                <input type="time" id="pickup-time" name="pickup_time"><br><br>
+
+                <!-- Flavour with datalist -->
+                <label for="flavour">Flavour:</label><br>
+                <input list="flavour-list" id="flavour" name="flavour" placeholder="Select or type flavour">
+                <datalist id="flavour-list">
+                    <option value="Vanilla Bean">
+                    <option value="Double Chocolate">
+                    <option value="Red Velvet">
+                    <option value="Matcha Green Tea">
+                </datalist><br><br>
+
+                <!-- Icing colour and sweetness level range slider -->
+                <label for="icing-colour">Icing Colour:</label><br>
+                <input type="color" id="icing-colour" name="icing_colour" value="#ff0000"><br><br>
+
+                <label for="sweetness">Sweetness Level (1 to 5):</label><br>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1"><br><br>
+
+                <!-- Submit button -->
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside id="menu">
+        <h3>Price List</h3>
+        <ul>
+            <li>Cupcakes &ndash; &pound;2.50 each</li>
+            <li>Orders &gt; 10 pieces get a free drink!</li>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CampusBake&reg;. All rights reserved.&nbsp;Prices subject to change.</p>
+    </footer>
+
+    <!-- Section 6: Price Calculator -->
+        <div id="calculator">
+            <h2>Price Calculator</h2>
+            <form oninput="totalPrice.value = (Number(cupcakes.value) * 3) + (Number(cakeSlices.value) * 5)">
+                
+                <!-- Cupcakes Input (RM 3.00 each) -->
+                <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br><br>
+
+                <!-- Cake Slices Input (RM 5.00 each) -->
+                <label for="cakeSlices">Cake Slices (RM 5.00 each):</label><br>
+                <input type="number" id="cakeSlices" name="cakeSlices" min="0" value="0"><br><br>
+
+                <!-- Output Element -->
+                <label>Total Price (RM): </label>
+                <output name="totalPrice" for="cupcakes cakeSlices">0</output>
+                
+            </form>
+        </div>
+
+        <!---From any all of the i can get know the total of calculation easily and get the information easily . -->
+
+</body>
+</html>
+
+
