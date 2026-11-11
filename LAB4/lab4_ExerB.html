@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Viewport meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <!-- Link external style sheet -->
+    <link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section with Promotions -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p class="intro">Freshly brewed coffee and local delights every day.</p>
+        
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>Promo: <span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+        </article>
+        
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Promo: <span class="old-price">RM 6.00</span> <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <!-- Video Section with Figure and Figcaption -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Figure 1: Inside the e-Café Campus experience.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback Section with Form -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <form class="feedback-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Visit Type:</label>
+            <input type="radio" id="dine-in" name="visit-type" value="Dine-in" checked>
+            <label for="dine-in" style="display:inline; font-weight:normal;">Dine-in</label>
+            <input type="radio" id="take-away" name="visit-type" value="Take-away">
+            <label for="take-away" style="display:inline; font-weight:normal;">Take-away</label>
+
+            <label>Favourite Items (Choose at least 3):</label>
+            <input type="checkbox" id="fav1" name="favourite" value="Kopi Tarik">
+            <label for="fav1" style="display:inline; font-weight:normal;">Kopi Tarik</label><br>
+            <input type="checkbox" id="fav2" name="favourite" value="Nasi Lemak">
+            <label for="fav2" style="display:inline; font-weight:normal;">Nasi Lemak</label><br>
+            <input type="checkbox" id="fav3" name="favourite" value="Croissant">
+            <label for="fav3" style="display:inline; font-weight:normal;">Croissant</label><br>
+            <input type="checkbox" id="fav4" name="favourite" value="Teh tarik">
+            <label for="fav4" style="display:inline; font-weight:normal;">Teh Tarik</label>
+
+            <br><br>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <!-- Footer Section with Address and Email Link -->
+    <footer id="contact">
+        <address>
+            Contact us via email: <a href="mailto:support@ecafecampus.com">support@ecafecampus.com</a>
+        </address>
+        <p>&copy; 2026 e-Café Campus</p>
+    </footer>
+</body>
+</html>

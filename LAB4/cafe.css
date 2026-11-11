@@ -1,0 +1,62 @@
+/* ================= 
+   Navigation Bar Styles 
+   ================ */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    background-color: #F2F3F4;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1A5276;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #FDEBD0;
+    color: #E67E22;
+}
+
+/* ================= 
+   Menu & Promotions Styles 
+   ================ -->
+.old-price {
+    text-decoration: line-through;
+    color: #7F8C8D;
+    margin-right: 8px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+/* ================= 
+   Responsive Video Styles 
+   ================ */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= 
+   Feedback Form Styles 
+   ================ */
+.feedback-form {
+    background-color: #EAFAF1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
