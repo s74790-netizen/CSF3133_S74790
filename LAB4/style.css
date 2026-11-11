@@ -1,0 +1,106 @@
+/* ==========================================
+   CSS STYLING & RESPONSIVE DESIGN
+   ========================================== */
+
+  
+
+/* Main Body & Layout (Requirement 4 & 8) */
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+/* Headings Text Decoration (Requirement 5) */
+h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* Navigation Bar Styling (Requirement 2 & 6) */
+nav ul {
+    list-style-type: none;
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Interactive Link States - Correct Order: link -> visited -> hover -> active (Requirement 6) */
+nav a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:active {
+    color: #ff0000;
+}
+
+/* ID & Class Selectors (Requirement 4) */
+#destinations {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px auto;
+    border: 1px solid #cccccc;
+    width: 60%;
+    border-radius: 5px;
+}
+
+/* Price & Text Decoration (Requirement 5) */
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888888;
+    margin-right: 10px;
+}
+
+/* Interactive Form Styling (Requirement 7) */
+.trip-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+/* Responsive Design for Video (Requirement 8) */
+video {
+    max-width: 100%;
+    height: auto;
+}
