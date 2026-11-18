@@ -1,0 +1,104 @@
+/* General page styling and default font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Header section with cover background image and white text */
+header {
+    background-image: url("books.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Heading font using the second Google Font */
+h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+/* Main content spacing and paragraph line height */
+main {
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Horizontal navigation bar styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Hover effect for inactive navigation links */
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Active navigation link highlight */
+.active {
+    background-color: #04AA6D;
+}
+
+/* Product table layout and borders */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Alternating row striping and hover highlight */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Table header styling: uppercase, centered, with 12px top/bottom padding */
+#products th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Right-align the Price column (3rd column) */
+#products td:nth-child(3), #products th:nth-child(3) {
+    text-align: right;
+}
+
+/* Footer styling with subtle background, centered text, and padding */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

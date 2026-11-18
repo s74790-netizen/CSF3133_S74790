@@ -1,0 +1,66 @@
+<!-- Error 1 (shop.html, Line 11):  Style rule h1 not allowed outside an @scope rule in a style element in body. >↩<style>↩h1 { tex -->
+<!-- Error 2 (shop.css, Line 1): Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>. -->
+ <!-- Error 3 (shop.css,Line 5) : mispelled background -->
+<!-- Error 4(shop.css, Line 1):  Element head is missing a required instance of child element title. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <!-- Task 8: Added Merriweather alongside Roboto in the same Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <style>
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <!-- Task 5: Semantic page structure (<header>, <nav>, <main>, <footer>) -->
+    <header>
+        <h1>Campus Bookstore</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- Task 6: Added .active class to the Home link -->
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Textbooks, stationery and more for every student.</p>
+        <table id="products">
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price (RM)</th>
+            </tr>
+            <tr>
+                <td>Web Design Basics</td>
+                <td>Textbook</td>
+                <td>45.00</td>
+            </tr>
+            <tr>
+                <td>A4 Notebook</td>
+                <td>Stationery</td>
+                <td>6.50</td>
+            </tr>
+            <tr>
+                <td>USB Drive 32GB</td>
+                <td>Gadget</td>
+                <td>25.00</td>
+            </tr>
+            <tr>
+                <td>Highlighter Set</td>
+                <td>Stationery</td>
+                <td>9.90</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>&copy; 2026 Campus Bookstore</footer>
+</body>
+</html>
