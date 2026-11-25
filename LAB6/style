@@ -1,0 +1,174 @@
+/* Base page styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #222;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #1f4e78;
+    color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 6px;
+    max-width: 900px;
+    margin: 0 auto 16px auto;
+}
+
+header h1 {
+    margin-bottom: 6px;
+}
+
+/* Section cards */
+section {
+    background-color: #ffffff;
+    padding: 18px 24px;
+    border-radius: 6px;
+    max-width: 900px;
+    margin: 0 auto 16px auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons and hover effects */
+button {
+    padding: 9px 16px;
+    background-color: #2673b5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1b568a;
+}
+
+input[type="text"] {
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+#welcomeMsg {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1f4e78;
+}
+
+/* Choice buttons and battle arena */
+.choice-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+}
+
+.player-box,
+.computer-box {
+    text-align: center;
+}
+
+.player-box p,
+.computer-box p {
+    margin-bottom: 8px;
+}
+
+/* Fixed image size */
+#playerImg,
+#computerImg {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d0d7de;
+}
+
+.vs-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Result text and scoreboard */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 24px;
+}
+
+.scoreboard span {
+    font-weight: bold;
+    margin-right: 14px;
+}
+
+/* History table styling */
+.history-section h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+#history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+}
+
+#history th,
+#history td {
+    border: 1px solid #cbd5e1;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+#history th {
+    background-color: #1f4e78;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#history tr:nth-child(even) td {
+    background-color: #f8fafc;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+#summary {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #1f4e78;
+}
+
+/* Footer styling */
+footer {
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: #555;
+    font-size: 13px;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
