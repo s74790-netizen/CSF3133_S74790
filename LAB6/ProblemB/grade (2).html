@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grade Calculator</title>
+    </head>
+    <body>
+        <h2>Student Grade Calculator</h2>
+        <form name="gradeForm" onsubmit="checkMark()">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="mark">Mark (0 - 100):</label>
+            <input type="text" id="mark" name="mark"><br>
+            <button type="submit">Check Grade</button>
+        </form>
+        <p id="result"></p>
+        <button onclick="showtable()">Show Grade Table></button>
+        <div id="tableContainer"></div>
+        <script src="grades.js"></script>
+    </body>
+</html>

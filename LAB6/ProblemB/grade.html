@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+    <!-- Extension 9: Link external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+
+    <!-- Fixed Line 9: Added "return " so returning false prevents form submission/reload -->
+    <form name="gradeForm" onsubmit="return checkMark()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark"><br>
+
+        <button type="submit">Check Grade</button>
+        <!-- Extension 7: Button to generate a random mark from 0 to 100 -->
+        <button type="button" onclick="setRandomMark()">Random Mark</button>
+    </form>
+
+    <p id="result"></p>
+    <!-- Extension 8: Container to display date and time below the result -->
+    <p id="timestamp"></p>
+
+    <!-- Fixed Line 17: Matched casing to showTable() -->
+    <button type="button" onclick="showTable()">Show Grade Table</button>
+    <div id="tableContainer"></div>
+
+    <!-- Fixed Line 19: Corrected filename from "grades.js" to "grade.js" -->
+    <script src="grade.js"></script>
+</body>
+</html>
